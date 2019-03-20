@@ -17,3 +17,11 @@ Optimization works as a minimization function, since we actually want to maximiz
     a) Sequential Least SQuares Programming (SLSQP) to find out the minimum point among negative sharpe ratio, ie. Optimized Portfolio
     b) Efficient Frontier to find out set of optimal portfolios 
 The efficient frontier is the set of optimal portfolios that offers the highest expected return for a defined level of risk or the lowest risk for a given level of expected return. Portfolios that lie below the efficient frontier are sub-optimal, because they do not provide enough return for the level of risk. Portfolios that cluster to the right of the efficient frontier are also sub-optimal, because they have a higher level of risk for the defined rate of return.
+
+Portfolio Allocation and Sharpe Ratio.ipynb
+===========================================
+1. How to use Quandl to get stock prices
+2. Normed Returns
+3. Plot Portfolio Values Graph
+4. Calculate Daily Returns, Cumulative Returns, Average Daily Returns, Std Daily Returns
+5. Sharpe Ratio
