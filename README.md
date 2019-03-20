@@ -1,6 +1,8 @@
 # python
 Python Algorithmic Trade
+
 porfolio.ipynb
+==============
 
 Python program to calculate the maximum weights of stock portfolio based on the "Modern Portfolio Theory", based on risk-averse investors can construct portfolios to optimize or maximize expected return based on a given level of market risk, emphasizing that risk is an inherent part of higher reward. It is one of the most important and influential economic theories dealing with finance and investment.
 
