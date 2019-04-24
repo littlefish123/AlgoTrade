@@ -12,11 +12,11 @@ Pairs trading is a strategy that uses two stocks that are highly correlated. It 
 3. Normalize Spread Moving Average
 4. Draw Mean line, -10% / 10% percent up Mean Line 
 5. Implement the trading strategy :
-     Check by end of 30 minutes of close market of every trade day
-	 If normalize spread rate > 0.5 
-	    Rebalance portfolio by (1) Short AA (2) Long UAL 
-	 If normalize spread rate < -.05
-	    Rebalance portfolio by (1) Long AA (2) Short UAL
+	Check by end of 30 minutes of close market of every trade day
+	If normalize spread rate > 0.5 
+		Rebalance portfolio by (1) Short AA (2) Long UAL 
+	If normalize spread rate < -0.5
+		Rebalance portfolio by (1) Long AA (2) Short UAL
 
 porfolio.ipynb
 ==============
