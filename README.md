@@ -16,7 +16,7 @@ Pairs trading is a strategy that uses two stocks that are highly correlated. It 
 (b) If normalize spread rate > 0.5, Rebalance portfolio by (1) Short AA (2) Long UAL 
 (c) If normalize spread rate < -0.5, Rebalance portfolio by (1) Long AA (2) Short UAL
 
-Sentimental Analysis
+Sentimental Analysis (sentiment analysis.ipynb)
 ====================
 Sentimental Analysis retrieve stock commentary from the market feeds and process whether it's a good or bad news and its relevant impact.
 
