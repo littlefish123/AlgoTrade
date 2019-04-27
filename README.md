@@ -1,6 +1,13 @@
 Python Algorithmic Trade
 ========================
 
+Bollingar Bands.ipynb
+=====================
+1) Go 100 % long when the stock price is below 2 times the 20 day rolling standard deviation subtracted from the 20 day moving average, 
+2) Go 100% short of the portfolio on that stock when the current price is above 2 times the 20 day rolling standard deviation added on to the 20 day moving average. 
+3) The check for this signal event should only happen once per day. 
+4)  Write out backtest algorithms with Quantopian.
+
 Pairs Trading (pairtrading.ipynb)
 =================================
 Develop on top of Quantopian Platform which access the historial prices & stock fundamentals. This platform provides backtest with historial stock period.
@@ -113,3 +120,11 @@ Portfolio Allocation and Sharpe Ratio.ipynb
 3. Plot Portfolio Values Graph
 4. Calculate Daily Returns, Cumulative Returns, Average Daily Returns, Std Daily Returns
 5. Sharpe Ratio
+
+
+Leverage.ipynb
+==============
+Demonstrate how to use Leverage capabilities of Quantopian platform.
+(1) Low Leverage Example
+(2) High Leverage Example
+(3) HIgh Limit on Leverage
