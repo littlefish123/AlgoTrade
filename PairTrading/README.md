@@ -1,4 +1,4 @@
-airs Trading (pairtrading.ipynb)
+Pairs Trading (pairtrading.ipynb)
 =================================
 Develop on top of Quantopian Platform which access the historial prices & stock fundamentals. 
 This platform provides backtest with historial stock period.
