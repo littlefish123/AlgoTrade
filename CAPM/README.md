@@ -1,32 +1,24 @@
-ARIMA.ipynb
-===========
-ARIMA (AutoRegressive Integrated Moving Average Model) is the generalization of ARMA Model (AutoRegressive Moving Average Model) to predict the future prices.
-1. Non-seasonal ARIMA
-2. Seasonal ARIMA
+Capital Assets Pricing Model CAPM.ipynb
+=======================================
+CAPM describe risk and separating market return versus your portfolio return.
 
-Data show evidence of non-stationary, where an initial differencing steps (corresponding to the "Integrated" part of model) can be applied one or more times to eliminate the non-stationary.
-Non-seasonal ARIMA are denoted by ARIMA(p,d,q)
-AR (p) : Autoregression - A regression model utilizes depedendent relationship between a current observation and observations over a previous period
-I(d) : Integrated - Differencing of observations in ordre to make the time series stationary.
-MA (q) : Moving Average - A model uses dependency between an observation and a residual error from a moving average model applied to lagged observations.
+Portfolio Return Rp(t) = Summation of Weight(i) X R(i)(t)
 
-1. Use "Augmented Dickey Fuller Test" to test for stationarity of data.
-2. Transform to stationary in order to evaluate it (continue differencing in each step until data reach stationary)
-3. Each differencing step comes of losing a row of data.
-4. For seasonal data, e.g. monthly data with yearly seasonality, you could difference by a time unit of 12 instead of 1.
-5. After the data come into stationary, use "AutoCorrelation Plot" (Correlogram) and "Partial AutoCorrelation Plot"
-    y axis - correlation
-	x axis - number of time units of lag.
-   Determine whether Sharp Drop off or Gradual Decline from the plot graph.
-   
-6. Figure out to 1. use AutoRegression (AR) or Moving Average (MA) 2. how many lags to use by:
-    a) If autocorrelation plot show negative autocorrection at first lag => use MA
-	b) p: The number of lag observations 
-	   q: The number of times that the raw observationst to be diferenced
-	   q: size of moving average window (order of moving average)
-	c) For example, a Sharp Drop in Partial Autocorrelation PLot after lag "k" suggests to use "AR-k" model. (by Partial AutoCorrelation Plot)
-	   For example, a Gradual Decline suggests to use MA Model (by AutoCorrelation Plot)
+e.g. Entire market = S&P500
+Market Cap of S&P500 = W(i) = MarketCap(i) / Summation of MarketCap(j)
 
-7. Predict the future prices by extending the future date period.	   
-   
-   
+CAPM Equation :
+Ri(t) = Beta-i * Rm(t) + Alpha-i(t)
+
+ Return of a Stock is equivalent to the "return of market" multiplied by "Beta factor" plus "residual Alpha".
+ 
+ If Beta=1, stock move in line with the market
+ If Beta-2, stock move up twice as market
+ 
+ Active Investors believe we can predict Alpha (only more than 50% correct would be fine)
+ 
+ Rp(t) = Beta-p * Rm(t) + Summation of Weight(i) * Alpha(i)(t)
+ 
+ Alpha-i(t) = Summation of Weight(i) * Alpha(i)(t)
+ 
+
